@@ -1,4 +1,5 @@
 import numpy as np
+import itertools
 
 def all_bitstrings(size):
     bitstrings = np.ndarray((2**size, size), dtype=int)
@@ -11,3 +12,6 @@ def all_bitstrings_slow(size):
     for i in np.arange(2**size):
         for j, b in enumerate(np.binary_repr(i)[::-1]):
             bitstrings[i, -(j+1)] = int(b)
+
+def all_bitstrings_iterator(size):
+    return itertools.product([0, 1], repeat=size)
