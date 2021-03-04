@@ -1,5 +1,5 @@
 # all-bitstrings
-Two functions using NumPy to compute all bitstrings of a given size.
+Two functions using NumPy to compute all bit strings of a given size.
 
 Notice the difference in compute time:
 ```Python
