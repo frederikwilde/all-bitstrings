@@ -18,8 +18,7 @@ Notice the difference in compute time:
 ```
 
 ## JIT compiling with JAX
-`all_bitstrings_jax` is implemented in such a way that it can be JIT compiled.
-For larger sizes this gives a significant speedup.
+`all_bitstrings_jax` uses JIT compilation in JAX. For larger sizes this gives a significant speedup.
 ```Python
 %timeit all_bitstrings(24)
 # 6.85 s ± 344 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
